@@ -11,109 +11,152 @@ html(lang="en")
       a.logo(href="/")
         img.logo--img(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png")
         span.logo--text TSHIRT STORE &reg
-      .nav
-        a.nav--item Men
-        a.nav--item Women
-        a.nav--item Kids
       input#ham(type="checkbox")
       label.ham(for="ham")
         .ham--line
+      nav.nav
+        a.nav--item Men
+        a.nav--item Women
+        a.nav--item Kids
       div.icons
         a.search.material-icons search
-        a.favorite.material-icons favorite_border
+        a.favorite.material-icons favorite
         a.cart.material-icons shopping_cart
-    //- section.filter
-    //-   .filter--title
-    //-   .filter--selection
-    //-     input.filter-box
-    //-     input.filter-box
-    //-     input.filter-box
-    //- section#items
-    //-   .container
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
-    //-     .item
-    //-       .item--like.material-icons favorite_border
-    //-       img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
-    //-       .item--texts
-    //-         .item--descibe
-    //-         .item--amount
+    section.filter
+      .filter--title Basic T-shirt
+      .filter--selection
+        .select
+          span.select--text Size
+            .select--icon
+          ul.select--selection
+            li XS
+            li S
+            li M
+            li L
+            li XL
+            li XXL
+        .select
+          span.select--text Color
+            .select--icon
+          ul.select--selection
+            li Black
+            li Pink
+            li Blue
+            li Yellow
+            li Gray
+            li Green
+        .select
+          span.select--text Sort
+            .select--icon
+          ul.select--selection
+            li Newest
+            li A > Z
+            li Z > A
+            li Price Ascending
+            li Price Descending
+        .clear
+          span.clear--text Clear Filter
+            .clear--icon
+    section#items
+      .container
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item3(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item4(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item1(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
+        .item
+          .item--box
+            .item--heart
+            img.item--img.item2(src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png")
+          .item--texts
+            .item--descibe
+            .item--amount
     //- section#pagetation
     //-   .present 14
     //-   .total 14
