@@ -1,0 +1,130 @@
+@import "reset.sass"
+$viewport: 960px
+
+header
+  *
+    border: 1px solid #000
+  $header_height: 60px
+  height: $header_height
+  width: 100%
+  position: fixed
+  top: 0
+  z-index: 1000
+  background: 
+    color: rgba(#fff,0.96)
+  box-shadow: 0px 1px 10px rgba(#555,0.1)
+
+  .logo
+    max-height: $header_height
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    width: auto
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &--img
+      height: 50px
+      margin: 5px 20px
+      @media screen and ( max-width: $viewport )
+        height: 30px
+        margin: 5px 10px
+    
+    &--text
+      font-size: 24px
+      @media screen and ( max-width: $viewport )
+        font-size: 18px
+      line-height: $header_height
+      font-weight: bold
+
+  .nav
+    width: 100%
+    background:
+      color: #ffffff
+    position: absolute
+    top: 100%
+    // display: none
+
+    &--item
+      font-size: 24px
+      line-height: $header_height
+      padding: 0 30px
+      display: block
+
+  #ham
+    &:checked
+      display: none
+      ~
+        .nav
+          display: block
+
+  .ham
+    @media screen and ( min-width: $viewport )
+      display: none
+    position: absolute
+    top: 0px
+    bottom: 0px
+    left: 10px
+    display: flex
+    align-items: center
+
+    &--line
+      width: 25px
+      height: 2.5px
+      background: 
+        color: black
+      position: relative
+
+      &::before
+        @extend .ham--line
+        content: ""
+        position: absolute
+        right: 0px
+        bottom: 10px
+
+      &::after
+        @extend .ham--line
+        content: ""
+        position: absolute
+        right: 0px
+        top: 10px
+
+  .icons
+    position: absolute
+    top: 0px
+    right: 10px
+
+    .material-icons
+      font-size: 36px
+      line-height: $header_height
+      padding: 0 10px
+
+
+.filter
+  margin: 
+    top: 100px
+
+// @media screen and ( min-width: $viewport )
+//   header
+//     $header_height: 60px
+//     .nav
+//       position: absolute
+//       top: 0px
+//       left: 50%
+//       transform: translate(-50%, 0)
+
+//       &--item
+//         font-size: 24px
+//         line-height: $header_height
+//         padding: 0 30px
+
+//     .icons
+//       position: absolute
+//       top: 0px
+//       right: 10px
+
+//       .material-icons
+//         font-size: 36px
+//         line-height: $header_height
+//         padding: 0 10px
