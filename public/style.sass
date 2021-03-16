@@ -152,7 +152,8 @@ header
     align-items: center
 
   .select, .clear
-    width: 160px
+    width: 9rem
+    min-width: 110px
     margin: 10px
     padding:
       top: 8px
@@ -163,12 +164,12 @@ header
     border-radius: 5px
 
     &--text
-      font-size: 20px
-      line-height: 30px
+      font-size: 1rem
+      line-height: 1rem
 
     &--icon
-      height: 30px
-      width: 30px
+      height: 1.5rem
+      width: 1.5rem
       @include bgm($drop_down_icon)
       float: right
 
@@ -201,6 +202,7 @@ header
 
     &--box
       width: 300px
+      height: 370px
       position: relative
       display: flex
       justify-content: center
@@ -218,3 +220,95 @@ header
 
     &--img
       width: 300px
+      height: 370px
+      position: absolute
+      top: 0
+      right: 0
+
+    &--clothes
+      @extend .item--img
+      opacity: 0
+      transition: opacity 0.5s
+      &:hover
+        opacity: 1
+
+section#pagetation
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 30px 0
+  font-size: 0.8rem
+
+  .present
+    &::after
+      content: "/"
+  
+footer
+  display: flex
+  align-items: center
+  flex-flow: column nowrap
+  overflow-x: hidden
+  position: relative
+
+  .banner
+    width: unset
+    height: 200px
+    @media screen and ( min-width: $viewport )
+      width: 80vw
+      height: unset
+
+  .newsletter
+    position: absolute
+    top: 1%
+    left: 50%
+    transform: translate(-50%)
+    padding: 30px 0
+    font-size: 0.7rem
+    width: 90vw
+    @media screen and ( min-width: 650px )
+      width: 50vw
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+
+    &--signup
+      width: 40vw
+      height: 30px
+      border-radius: 50px
+      display: flex
+      flex-flow: row nowrap
+      margin: 20px
+      @media screen and ( max-width: 649px )
+        min-width: 320px
+
+      .signup--address
+        width: 30vw
+        height: 30px
+        border-radius: 50px 0 0 50px
+        padding:
+          left: 20px
+        @media screen and ( max-width: 649px )
+          min-width: 250px
+
+      .signup--button
+        width: 10vw
+        height: 30px
+        border-radius: 0 50px 50px 0
+        text-align: center
+        line-height: 30px
+        color: white
+        background:
+          color: black
+        @media screen and ( max-width: 649px )
+          min-width: 70px
+
+    &--text
+      font-weight: bold
+      white-space: pre-wrap
+
+    &--policy a
+      text-decoration: underline
+
+  .copyright
+    font-size: 0.7rem
